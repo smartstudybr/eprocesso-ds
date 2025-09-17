@@ -1,0 +1,12 @@
+{
+  "name": "input",
+  "description": "Campo de entrada de dados com estilos consistentes",
+  "dependencies": [],
+  "files": [
+    {
+      "name": "input.tsx", 
+      "path": "components/ui/input.tsx"
+    }
+  ],
+  "registryDependencies": ["utils"]
+}

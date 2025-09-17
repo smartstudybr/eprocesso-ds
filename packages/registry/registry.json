@@ -2,8 +2,11 @@
   "components": {
     "button": {
       "name": "button",
-      "description": "Botão customizável com variantes",
-      "dependencies": ["class-variance-authority", "clsx"],
+      "description": "Botão customizável com múltiplas variantes e tamanhos",
+      "dependencies": [
+        "@radix-ui/react-slot", 
+        "class-variance-authority"
+      ],
       "files": [
         {
           "name": "button.tsx",
@@ -14,8 +17,8 @@
     },
     "input": {
       "name": "input",
-      "description": "Campo de entrada de dados",
-      "dependencies": ["react"],
+      "description": "Campo de entrada de dados com estilos consistentes",
+      "dependencies": [],
       "files": [
         {
           "name": "input.tsx", 
@@ -28,7 +31,7 @@
   "lib": {
     "utils": {
       "name": "utils",
-      "description": "Utilitários para merge de classes CSS",
+      "description": "Utilitários para merge de classes CSS com Tailwind",
       "dependencies": ["clsx", "tailwind-merge"],
       "files": [
         {

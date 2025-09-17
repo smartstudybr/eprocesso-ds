@@ -1,0 +1,15 @@
+{
+  "name": "button",
+  "description": "Botão customizável com múltiplas variantes e tamanhos",
+  "dependencies": [
+    "@radix-ui/react-slot", 
+    "class-variance-authority"
+  ],
+  "files": [
+    {
+      "name": "button.tsx",
+      "path": "components/ui/button.tsx"
+    }
+  ],
+  "registryDependencies": ["utils"]
+}

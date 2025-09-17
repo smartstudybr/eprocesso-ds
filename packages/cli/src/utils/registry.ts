@@ -1,8 +1,8 @@
 import fetch from 'node-fetch';
 import { Registry, ComponentInfo } from '../types';
 
-// URL base do registry (você pode hospedar no GitHub, Vercel, etc.)
-const REGISTRY_BASE_URL = 'https://raw.githubusercontent.com/seu-usuario/eprocesso-ds/main/packages/registry';
+// URL base do registry
+const REGISTRY_BASE_URL = 'https://raw.githubusercontent.com/smartstudybr/eprocesso-ds_registry/main';
 
 export async function fetchRegistry(): Promise<Registry> {
   try {
