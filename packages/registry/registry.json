@@ -1,0 +1,41 @@
+{
+  "components": {
+    "button": {
+      "name": "button",
+      "description": "Botão customizável com variantes",
+      "dependencies": ["class-variance-authority", "clsx"],
+      "files": [
+        {
+          "name": "button.tsx",
+          "path": "components/ui/button.tsx"
+        }
+      ],
+      "registryDependencies": ["utils"]
+    },
+    "input": {
+      "name": "input",
+      "description": "Campo de entrada de dados",
+      "dependencies": ["react"],
+      "files": [
+        {
+          "name": "input.tsx", 
+          "path": "components/ui/input.tsx"
+        }
+      ],
+      "registryDependencies": ["utils"]
+    }
+  },
+  "lib": {
+    "utils": {
+      "name": "utils",
+      "description": "Utilitários para merge de classes CSS",
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        {
+          "name": "utils.ts",
+          "path": "lib/utils.ts"
+        }
+      ]
+    }
+  }
+}

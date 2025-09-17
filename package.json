@@ -1,0 +1,21 @@
+{
+  "name": "@eprocesso/design-system",
+  "version": "1.0.0",
+  "description": "Design System CLI para componentes React + Tailwind",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:cli": "npm run build -w packages/cli",
+    "dev": "npm run dev -w packages/cli",
+    "publish:cli": "npm run build:cli && npm publish -w packages/cli",
+    "sync:registry": "node scripts/sync-registry.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "typescript": "^5.2.2",
+    "tsx": "^4.6.0"
+  }
+}
