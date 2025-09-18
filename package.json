@@ -7,11 +7,12 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build --workspaces",
-    "build:cli": "npm run build -w packages/cli",
-    "dev": "npm run dev -w packages/cli",
-    "publish:cli": "npm run build:cli && npm publish -w packages/cli",
-    "sync:registry": "node scripts/sync-registry.js"
+    "build": "cd packages/cli && npm run build",
+    "build:cli": "cd packages/cli && npm run build",
+    "dev": "cd packages/cli && npm run dev",
+    "publish:cli": "npm run build:cli && cd packages/cli && npm publish",
+    "sync:registry": "node scripts/sync-registry.js",
+    "install:all": "npm install && npm install --workspace=packages/cli && npm install --workspace=packages/registry"
   },
   "devDependencies": {
     "@types/node": "^20.8.0",

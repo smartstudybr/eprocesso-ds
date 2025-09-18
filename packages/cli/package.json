@@ -7,16 +7,27 @@
     "eprocesso-ds": "dist/index.js",
     "epds": "dist/index.js"
   },
-  "private": true,
-  "workspaces": [
-    "packages/*"
+  "files": [
+    "dist/**/*",
+    "README.md"
   ],
   "scripts": {
-    "build": "npm run build --workspaces",
-    "build:cli": "npm run build -w packages/cli",
-    "dev": "npm run dev -w packages/cli",
-    "publish:cli": "npm run build:cli && npm publish -w packages/cli",
-    "sync:registry": "node scripts/sync-registry.js"
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "tailwindcss",
+    "design-system",
+    "ui-components",
+    "cli"
+  ],
+  "author": "RCDC8|Serpro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smartstudybr/eprocesso-ds.git"
   },
   "dependencies": {
     "commander": "^11.1.0",
